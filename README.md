@@ -25,8 +25,6 @@ A YOLOv8n object detector, fine-tuned from COCO-pretrained weights, that finds a
 ├── README.md
 ├── requirements.txt
 ├── inference.py                 # competition starter file, with IMGSZ = 768
-├── weights/
-│   └── best.pt                  # submitted model (exp01), see section 5
 ├── src/
 │   ├── train.py                 # training script
 │   └── backup.py                # copies run outputs and verifies checksums
@@ -164,9 +162,7 @@ Expected result: an official validation accuracy score near 42.6, within about �
 - **Seed variance.** About 1.2 points. Small changes between experiments are not reliable evidence.
 - **Only two inference settings were used.** Confidence 0.001 and IoU 0.6. We did not tune them.
 - **Speed.** Measured on Kaggle T4 GPUs at batch size 1. The organizers' hardware may differ.
-- **Trained weights.** **[CHOOSE ONE AND DELETE THE OTHER]**
-  - (a) `weights/best.pt` is included, and the checksum above matches.
-  - (b) The submitted weights were lost in a session failure after the submission was made. The file in `weights/` is therefore not the exact submitted model, and reproduction requires retraining (section 11). The official score of 42.64 was measured on the model before the loss.
+- **Trained weights.** The submitted weights are not included in this repository. They were lost in a session failure after the submission was made. Reproduction requires retraining (section 11). The official score of 42.64 was measured on the model before the loss.
 
 ## 13. Links
 
