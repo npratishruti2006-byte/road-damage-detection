@@ -1,3 +1,4 @@
+# src/backup.py
 # Copies a training run's required files into a backup folder and verifies checksums.
 import hashlib, json, shutil
 from datetime import datetime
