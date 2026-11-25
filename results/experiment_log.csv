@@ -1,0 +1,4 @@
+exp,model,init,epochs,imgsz,batch,mAP50,mAP50_95,precision,recall,speed_score,accuracy_score,notes
+exp00,yolov8n,yolov8n_coco,50,640,16,0.4906,0.2098,0.5265,0.4892,1.0,41.41,"official baseline, COCO init"
+exp01,yolov8n,yolov8n_coco,50,768,16,0.5036,0.2167,0.5536,0.4943,1.0,42.64,"768 px, seed 0, official score"
+exp02,yolov8n,yolov8n_coco,50,768,16,0.4907,0.2117,0.5228,0.4924,1.0,41.46,"768 px, seed 1, official score"
